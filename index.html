@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>To-Do List App</title>
+	<link rel="stylesheet" href="css/myCSS.css">
+</head>
+
+<body data-ng-app="myToDoApp" class="noGutters">
+	<div class="container alignCenter noGutters" data-ng-controller="myToDoListController">
+		
+		<!-- task name -->
+		<input type="text" data-ng-model="newTask.task" placeholder="Enter Task" />
+
+		<!-- task description -->
+		<input type="text" data-ng-model="newTask.description" placeholder="Enter Description" />
+		
+		<!-- delete button -->
+		<button data-ng-click="removeCompletedTasks($index)" >Delete Task</button>
+		
+		<!-- add button -->
+		<button data-ng-click="addNewTask()">Add Task</button>	
+	
+		<br><br>
+		
+		<h3 data-ng-model="getNumTasks">No. of Tasks: {{getNumTasks()}}</h3>
+				
+		<ul>
+			<li data-ng-repeat="currentTask in todoList" class="done-{{currentTask.done}}"><input type="checkbox" data-ng-model="currentTask.done">{{currentTask.task}} - {{currentTask.description}} {{currentTask.priority}}</li>
+		</ul>
+	</div>
+	
+	<script type="text/javascript" src="js/angular.js"></script>
+	<script type="text/javascript" src="js/myJS.js"></script>
+</body>
+
+</html>
