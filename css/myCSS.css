@@ -1,13 +1,15 @@
 .done-true 
 {
-  text-decoration: line-through;
-  color: grey;
+	color: #000;
+	background-color: #F00;
+	
+	
 }
 
 .done-false
 {
-  	color: #000;
-	background-color: #F00;
+  	text-decoration: line-through;
+  color: grey;
 }
 
 .alignCenter
@@ -58,4 +60,9 @@ button
 h3
 {
 	padding-left: 5px;
+}
+
+li
+{
+	list-style: none;
 }
