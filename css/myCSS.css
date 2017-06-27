@@ -52,19 +52,13 @@ button
 	
 }
 
-#form
-{
-	width: 100%;
-	padding: 0px;
-	margin: 0px;
-	background: #F00;
-}
+
 
 
 #form
 {
 	background-color: #F00;
-	height: 100px;
+
 	position: absolute;
 	bottom: 0px;
 }
