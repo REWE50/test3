@@ -22,7 +22,7 @@
     <preference name="orientation"                value="default" />       
     <preference name="target-device"              value="universal" />     
     <preference name="android-installLocation"    value="auto" />    
-	<preference name="phonegap-version"       value="6.1.2" />
+	<preference name="phonegap-version" value="cli-6.4.0" />
  
     <!-- core plugins -->
 	<plugin name="cordova-plugin-inappbrowser" spec="1.7.1" />
