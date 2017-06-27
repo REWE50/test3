@@ -6,7 +6,8 @@
 
 .done-false
 {
-  color: #F00;
+  	color: #000;
+	background-color: #F00;
 }
 
 .alignCenter
