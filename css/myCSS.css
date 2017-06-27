@@ -62,12 +62,5 @@ h3
 	padding-left: 5px;
 }
 
-ul
-{
-	width: 100%;
-}
-li
-{
-	list-style: none;
-	width: 100%;
-}
+ul { padding:0; margin:0; white-space:nowrap; }
+ li { width: 100%; list-style-type:none; display:inline-block; }
