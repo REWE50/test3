@@ -23,10 +23,12 @@
     <preference name="target-device"              value="universal" />     
     <preference name="android-installLocation"    value="auto" />    
 	<preference name="phonegap-version" value="cli-6.4.0" />
+	<preference name="SplashScreen" value="splash" />
  
     <!-- core plugins -->
 	<plugin name="cordova-plugin-inappbrowser" spec="1.7.1" />
 	<plugin name="cordova-plugin-splashscreen" />
+	
 
     <!-- customised icons -->
     <icon src="icon.png" />
