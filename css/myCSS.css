@@ -1,6 +1,6 @@
 body
 {
-	position: relative;
+	position: absolute;
 }
 
 .done-true 
@@ -55,7 +55,7 @@ button
 #form
 {
 	background-color: #F00;
-	position: absolute;
+	position: relative;
 	bottom: 0px;
 	width: 100%;
 }
