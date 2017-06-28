@@ -1,5 +1,15 @@
+/*
 
+body
+{
+	position: absolute;
+}
+*/
 
+#mainDiv
+{
+	position: absolute;
+}
 .done-true 
 {
 	color: #000;
