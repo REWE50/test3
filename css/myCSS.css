@@ -69,8 +69,17 @@ ul
 }
 
 li 
-{
-	
+{	
 	list-style-type: none; 
 	padding-left: 20px;
+}
+
+.green
+{
+	background-color: #0F0;
+}
+
+.red
+{
+	background-color: #F00;
 }
