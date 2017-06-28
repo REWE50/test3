@@ -29,6 +29,15 @@ var myApp = angular.module("myToDoApp", []);
 			
 			$scope.removeCompletedTasks = function()
 			{
+				for(var i = 0; i < $scope.todoList.length; i++) 
+				{
+					if($scope.todoList[i].done)  
+					{
+						$scope.todoList.splice(i, 1);
+						i--;
+					}
+				}
+				/*
 				angular.forEach($scope.todoList, function(task, index)
 				{
 					if(task.done)
@@ -36,5 +45,6 @@ var myApp = angular.module("myToDoApp", []);
 						todoList.splice(index, 1);
 					}
 				 })	
+				 */
 			};		
 		});	
