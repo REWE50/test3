@@ -5,13 +5,13 @@
 	<meta charset="utf-8">
 	<title>My To-Do List</title>
 	<link rel="stylesheet" href="css/myCSS.css">
+	<link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
 </head>
 
-<body data-ng-app="myToDoApp" class="noGutters">
+<body data-ng-app="myToDoList" class="noGutters">
 	<div class="container alignCenter noGutters" data-ng-controller="myToDoListController">
+		<h1 data-ng-model="getNumTasks">No. of Tasks: {{getNumTasks()}}</h1>
 		
-		<h3 data-ng-model="getNumTasks">No. of Tasks: {{getNumTasks()}}</h3>
-				
 		<ul>
 			<li data-ng-repeat="currentTask in todoList" class="done-{{currentTask.done}}"><input type="checkbox" data-ng-model="currentTask.done">{{currentTask.task}} - {{currentTask.description}} {{currentTask.priority}}</li>
 		</ul>
