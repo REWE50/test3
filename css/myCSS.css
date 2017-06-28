@@ -52,6 +52,7 @@ button
 	background-color: #F00;
 	position: fixed;
 	bottom: 0px;
+	width: 100%;
 }
 
 h3
