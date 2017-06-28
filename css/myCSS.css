@@ -1,3 +1,8 @@
+body
+{
+	position: relative;
+}
+
 .done-true 
 {
 	color: #000;
@@ -50,7 +55,7 @@ button
 #form
 {
 	background-color: #F00;
-	position: fixed;
+	position: absolute;
 	bottom: 0px;
 	width: 100%;
 }
