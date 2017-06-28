@@ -4,6 +4,7 @@ body
 	background-position: top;
 	background-repeat: no-repeat;
 	background-size: auto;
+	min-width: 300px;
 }
 
 #header
@@ -11,6 +12,7 @@ body
 	background: #EFEFEF;
 	height: 60px;;
 	border-bottom: 2px dashed #999;
+	min-width: 300px;
 }
 
 .floatLeft
@@ -27,8 +29,9 @@ body
 
 .done-true 
 {
-	color: #000;
-	background-color: #F00;
+	color: #FFF;
+	background-color: #a23232;
+	
 }
 
 .done-false
@@ -111,6 +114,8 @@ li
 {	
 	list-style-type: none; 
 	padding-left: 20px;
+	font-size: 20px;
+	line-height: 30px;
 }
 
 .green
