@@ -6,6 +6,25 @@ body
 	background-size: auto;
 }
 
+#header
+{	
+	background: #EFEFEF;
+	height: 60px;;
+	border-bottom: 2px dashed #999;
+}
+
+.floatLeft
+{
+	float: left;
+	width: 50%;
+}
+
+.floatRight
+{
+	float: right;
+	width: 50%;
+}
+
 .done-true 
 {
 	color: #000;
@@ -64,18 +83,22 @@ button
 	background-color: #EFEFEF;
 	position: absolute;
 	bottom: 0px;
+	border-top: 2px dashed #999;
 }
-
+.noBorder
+{
+	border-top: 0px;
+}
 h1
 {
-	background-color: #EFEFEF;
+	
 	padding-left: 5px;
 	font-family: 'Amatic SC', cursive;
 	padding-top: 10px;
 	margin-top: 0px;
 	padding-bottom: 10px;
 	margin-bottom: 0px;	
-	border-bottom: 1px dashed #000;
+	/*border-bottom: 1px dashed #000;*/
 }
 
 ul 
