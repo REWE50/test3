@@ -25,7 +25,9 @@
 			</div>
 
 			<ul>
+				
 				<li data-ng-repeat="currentTask in todoList" class="done-{{currentTask.done}}">#{{$index+1}}<input type="checkbox" data-ng-model="currentTask.done" id="checkBox" />&nbsp;<span id="taskName">{{currentTask.task}}</span> {{currentTask.description}}</li>
+				<li data-ng-view="popHuzzahMsg" id="huzzahMsg">{{popHuzzahMsg()}}</li>
 			</ul>
 
 			<div id="form">	
