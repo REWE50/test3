@@ -6,6 +6,8 @@
 		<title>My To-Do List</title>
 		<link rel="stylesheet" href="css/myCSS.css">
 		<link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 
 		<!--
 			Ray Egan
@@ -34,10 +36,10 @@
 				<input type="text" data-ng-model="newTask.description" placeholder="Enter Description" />
 
 				<!-- delete button -->
-				<button data-ng-click="removeCompletedTasks($index)" class="red">Erase Task</button>
+				<button data-ng-click="removeCompletedTasks($index)" class="red"><i class="material-icons">delete_forever</i>&nbsp;Erase Task</button>
 
 				<!-- add button -->
-				<button data-ng-click="addNewTask()" class="green">Add Task</button>
+				<button data-ng-click="addNewTask()" class="green"><i class="material-icons">create</i>&nbsp;Add Task</button>
 			</div>
 
 		</div>
