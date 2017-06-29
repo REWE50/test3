@@ -15,6 +15,17 @@ myApp.controller("myToDoListController", function($scope)
 		return $scope.todoList.length;
 	};	
 	
+	$scope.huzzahMsg = "Huzzah! You have no tasks to do!";
+	$scope.popHuzzahMsg = function()
+	{
+		return $scope.huzzahMsg;
+	}
+	
+	$scope.killHuzzahMsg = function()
+	{
+		$scope.huzzahMsg = "";
+	}
+	
 	// pushes the task name and description as entered by the user to the todoList array, and adds a default 'done' property set to false
 	$scope.addNewTask = function()
 	{				
@@ -46,6 +57,8 @@ myApp.controller("myToDoListController", function($scope)
 				// resets the input fields to empty strings to avoid duplication entry of tasks
 				$scope.newTask.task = "";
 				$scope.newTask.description = "";
+				
+				$scope.killHuzzahMsg();
 			}
 		}
 		else
@@ -72,6 +85,11 @@ myApp.controller("myToDoListController", function($scope)
 				//console.log(i)
 			}
 			//console.log(i)
+			if(i <= 0)
+				{
+					$scope.huzzahMsg = "Huzzah! You have no tasks to do!";
+					$scope.popHuzzahMsg();
+				}
 		}
 	};		
 });	
