@@ -87,7 +87,7 @@ myApp.controller("myToDoListController", function($scope)
 			//console.log(i)
 			if(i <= 0)
 				{
-					$scope.huzzahMsg = "Huzzah! I have done all my taks!";
+					$scope.huzzahMsg = "Huzzah! I have done all my tasks!";
 					$scope.popHuzzahMsg();
 				}
 		}
