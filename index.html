@@ -12,7 +12,7 @@
 	<div class="container alignCenter noGutters" data-ng-controller="myToDoListController">
 		
 		<div id="header">
-			<div class="floatLeft"><h1>My To-Do List</h1></div>
+			<div class="floatLeft"><h1>&nbsp;My To-Do List</h1></div>
 			<div class="floatRight"><h1 data-ng-model="getNumTasks"> No. of Tasks: {{getNumTasks()}}</h1></div>
 		</div>
 		
@@ -22,7 +22,7 @@
 					
 		<div id="form">	
 			<!-- task name -->
-			<input type="text" data-ng-model="newTask.task" class="noBorder" placeholder="Enter Task" />
+			<input type="text" data-ng-model="newTask.task" class="noBorder" placeholder="Enter Task Name" />
 
 			<!-- task description -->
 			<input type="text" data-ng-model="newTask.description" placeholder="Enter Description" />
