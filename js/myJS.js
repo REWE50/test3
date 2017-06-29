@@ -15,7 +15,7 @@ myApp.controller("myToDoListController", function($scope)
 		return $scope.todoList.length;
 	};	
 	
-	$scope.huzzahMsg = "Huzzah! You have no tasks to do!";
+	$scope.huzzahMsg = "Huzzah! I have no tasks to do!";
 	$scope.popHuzzahMsg = function()
 	{
 		return $scope.huzzahMsg;
@@ -87,7 +87,7 @@ myApp.controller("myToDoListController", function($scope)
 			//console.log(i)
 			if(i <= 0)
 				{
-					$scope.huzzahMsg = "Huzzah! You have no tasks to do!";
+					$scope.huzzahMsg = "Huzzah! I have done all my taks!";
 					$scope.popHuzzahMsg();
 				}
 		}
