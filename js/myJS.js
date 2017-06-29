@@ -15,15 +15,11 @@ myApp.controller("myToDoListController", function($scope)
 		return $scope.todoList.length;
 	};	
 	
+	// outputs an initial message that the user has no tasks
 	$scope.huzzahMsg = "Huzzah! I have no tasks to do!";
-	$scope.popHuzzahMsg = function()
+	$scope.getHuzzahMsg = function()
 	{
 		return $scope.huzzahMsg;
-	}
-	
-	$scope.killHuzzahMsg = function()
-	{
-		$scope.huzzahMsg = "";
 	}
 	
 	// pushes the task name and description as entered by the user to the todoList array, and adds a default 'done' property set to false
@@ -58,7 +54,9 @@ myApp.controller("myToDoListController", function($scope)
 				$scope.newTask.task = "";
 				$scope.newTask.description = "";
 				
-				$scope.killHuzzahMsg();
+				// clears the huzsah message off the screen to show the tasks
+				$scope.huzzahMsg="";
+				$scope.getHuzzahMsg();
 			}
 		}
 		else
@@ -85,11 +83,15 @@ myApp.controller("myToDoListController", function($scope)
 				//console.log(i)
 			}
 			//console.log(i)
-			if(i <= 0)
-				{
-					$scope.huzzahMsg = "Huzzah! I have done all my tasks!";
-					$scope.popHuzzahMsg();
-				}
+			
+			// outputs a message if the user clears all their tasks
+			if($scope.todoList.length <1)
+			{
+				$scope.huzzahMsg = "Huzzah! I have done all my tasks!";
+				$scope.getHuzzahMsg();
+			}
 		}
+		
+		
 	};		
 });	
