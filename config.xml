@@ -28,6 +28,7 @@
     <!-- core plugins -->
 	<plugin name="cordova-plugin-inappbrowser" spec="1.7.1" />
 	<plugin name="cordova-plugin-splashscreen" />
+	<plugin name="orientationLock" spec="https://github.com/cogitor/PhoneGap-OrientationLock.git" />
 
     <!-- customised icons -->
     <icon src="icon.png" />
@@ -49,6 +50,10 @@
         <allow-intent href="market:*" />
     </platform>
 	
-	
+	<gap:config-file platform="android" parent="/manifest" >
+		<application>
+			<activity android:screenOrientation="portrait" android:configChanges="orientation"/>
+		</application>
+	</gap:config-file>
 
 </widget>
