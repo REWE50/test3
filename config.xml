@@ -49,8 +49,6 @@
         <allow-intent href="market:*" />
     </platform>
 	
-	<gap:config-file platform="android" parent="/manifest" mode="replace">
-		<activity android:screenOrientation="portrait"></activity>
-	<gap:config-file>
+	
 
 </widget>
