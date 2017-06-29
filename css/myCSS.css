@@ -73,6 +73,13 @@ select
 	height: 25px;
 }
 
+#huzzahMsg
+{
+	text-align: center;
+	font-size: 35px;
+	padding-top: 208px;
+}
+
 input[type=text]
 {
 	background: #dedede;
