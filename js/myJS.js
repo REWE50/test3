@@ -8,7 +8,7 @@ myApp.controller("myToDoListController", function($scope)
 
 	// inserts the todoList array into scope
 	$scope.todoList = todoList;
-
+		
 	// returns the number of tasks held in the array
 	$scope.getNumTasks = function()
 	{
@@ -17,19 +17,22 @@ myApp.controller("myToDoListController", function($scope)
 
 	// pushes the task name and description as entered by the user to the todoList array, and adds a default 'done' property set to false
 	$scope.addNewTask = function()
-	{			
-		$scope.todoList.push
-		(
-			{
-				task: $scope.newTask.task,
-				description: $scope.newTask.description,
-				done: false
-			}
-		);
+	{				
+		if($scope.newTask != null)
+		{
+			$scope.todoList.push
+			(
+				{
+					task: $scope.newTask.task,
+					description: $scope.newTask.description,
+					done: false
+				}
+			);
 
-		// resets the input fields to blank strings to avoid duplication entry of tasks
-		$scope.newTask.task = "";
-		$scope.newTask.description = "";
+			// resets the input fields to blank strings to avoid duplication entry of tasks
+			$scope.newTask.task = "";
+			$scope.newTask.description = "";
+		}
 	};
 
 	// a method to remove completed tasks - once their checkbox is checked, which changes the default value of 'done' from false to true
