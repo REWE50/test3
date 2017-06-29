@@ -49,7 +49,7 @@
     </platform>
 	
 	<gap:config-file platform="android" parent="/manifest">
-		<activity android:screenOrientation="portrait"></activity>
+		<activity android:screenOrientation="portrait" android:configChanges="orientation|keyboardHidden"></activity>
 	</gap:config-file>
 
 </widget>
