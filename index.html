@@ -1,43 +1,49 @@
 <!doctype html>
 <html>
 
-<head>
-	<meta charset="utf-8">
-	<title>My To-Do List</title>
-	<link rel="stylesheet" href="css/myCSS.css">
-	<link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
-</head>
+	<head>
+		<meta charset="utf-8">
+		<title>My To-Do List</title>
+		<link rel="stylesheet" href="css/myCSS.css">
+		<link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
 
-<body data-ng-app="myToDoList" class="noGutters">
-	<div class="container alignCenter noGutters" data-ng-controller="myToDoListController">
-		
-		<div id="header">
-			<div class="floatLeft"><h1>&nbsp;My To-Do List</h1></div>
-			<div class="floatRight"><h1 data-ng-model="getNumTasks"> No. of Tasks: {{getNumTasks()}}</h1></div>
+		<!--
+			Ray Egan
+			MWA Assessment 2 - Angular.JS To-Do List App
+			Date: 
+		-->
+	</head>
+
+	<body data-ng-app="myToDoList" class="noGutters">
+		<div class="container alignCenter noGutters" data-ng-controller="myToDoListController">
+
+			<div id="header">
+				<div class="floatLeft"><h1>&nbsp;My To-Do List</h1></div>
+				<div class="floatRight"><h1 data-ng-model="getNumTasks"> No. of Tasks: {{getNumTasks()}}</h1></div>
+			</div>
+
+			<ul>
+				<li data-ng-repeat="currentTask in todoList" class="done-{{currentTask.done}}">{{$index+1}}<input type="checkbox" data-ng-model="currentTask.done">{{currentTask.task}} - {{currentTask.description}}</li>
+			</ul>
+
+			<div id="form">	
+				<!-- task name -->
+				<input type="text" data-ng-model="newTask.task" class="noBorder" placeholder="Enter Task Name" />
+
+				<!-- task description -->
+				<input type="text" data-ng-model="newTask.description" placeholder="Enter Description" />
+
+				<!-- delete button -->
+				<button data-ng-click="removeCompletedTasks($index)" class="red">Erase Task</button>
+
+				<!-- add button -->
+				<button data-ng-click="addNewTask()" class="green">Add Task</button>
+			</div>
+
 		</div>
-		
-		<ul>
-			<li data-ng-repeat="currentTask in todoList" class="done-{{currentTask.done}}">{{$index+1}}<input type="checkbox" data-ng-model="currentTask.done">{{currentTask.task}} - {{currentTask.description}}</li>
-		</ul>
-					
-		<div id="form">	
-			<!-- task name -->
-			<input type="text" data-ng-model="newTask.task" class="noBorder" placeholder="Enter Task Name" />
 
-			<!-- task description -->
-			<input type="text" data-ng-model="newTask.description" placeholder="Enter Description" />
-
-			<!-- delete button -->
-			<button data-ng-click="removeCompletedTasks($index)" class="red">Delete Task</button>
-
-			<!-- add button -->
-			<button data-ng-click="addNewTask()" class="green">Add Task</button>
-		</div>
-		
-	</div>
-	
-	<script type="text/javascript" src="js/angular.js"></script>
-	<script type="text/javascript" src="js/myJS.js"></script>
-</body>
+		<script type="text/javascript" src="js/angular.js"></script>
+		<script type="text/javascript" src="js/myJS.js"></script>
+	</body>
 
 </html>
