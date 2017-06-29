@@ -46,6 +46,16 @@ body
 	margin-right: auto;
 }
 
+#taskName
+{
+	background: rgba(255, 230, 0, 0.5);
+    padding: 0px 10px 0px 8px;
+    margin: -3px -5px;
+    line-height: 30px;
+    border-radius: 3px;
+    display:inline-block;
+}
+
 .noGutters
 {
 	margin: 0px;
@@ -80,6 +90,10 @@ input[type="checkbox"]
 	
 }
 
+.alignLeft
+{
+	text-align: left;
+}
 button
 {
 	width: 50%;	
