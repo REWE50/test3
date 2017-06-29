@@ -9,7 +9,7 @@ body
 
 #header
 {	
-	background: #EFEFEF;
+	background: #dedede;
 	height: 60px;;
 	border-bottom: 2px dashed #999;
 	min-width: 300px;
@@ -60,6 +60,8 @@ select
 
 input[type=text]
 {
+	background: #dedede;
+	
 	width: 100%;
 	box-sizing: border-box;
 	height: 40px;
