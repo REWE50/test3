@@ -49,7 +49,7 @@
     </platform>
 	
 	<gap:config-file platform="android" parent="/manifest">
-		<orientation android:screenOrientation="portrait" />
+		<activity android:screenOrientation="portrait" />
 	</gap:config-file>
 
 </widget>
