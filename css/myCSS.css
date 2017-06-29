@@ -32,6 +32,9 @@ body
 	color: #FFF;
 	background-color: #a23232;
 	
+	border-bottom: 1px solid #555;
+	line-height: 29px;
+	
 }
 
 .done-false
