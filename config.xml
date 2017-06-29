@@ -17,11 +17,11 @@
 
 	<content src="index.html"></content>
 	
+	<preference name="phonegap-version" 			value="cli-6.4.0" />
     <preference name="permissions"             	    value="none"/>
-           
+    <preference name="orientation"              	value="portrait" />       
     <preference name="target-device"             	value="universal" />     
     <preference name="android-installLocation"   	value="auto" />    
-	<preference name="phonegap-version" 			value="cli-6.4.0" />
 	<preference name="SplashScreen" 				value="splash" />
  
     <!-- core plugins -->
@@ -44,6 +44,7 @@
     
     <!-- build for android only -->
 	<platform name="android">
+		<preference name="orientation"              	value="portrait" />
         <allow-intent href="market:*" />
     </platform>
 
