@@ -87,6 +87,25 @@ input[type=text]
 	box-sizing: border-box;
 	height: 40px;
 	padding-left: 5px;
+	color: #f00;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #9a9a9a;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #9a9a9a;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #9a9a9a;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #9a9a9a;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+   color:    #9a9a9a;
 }
 
 input[type=radio]
