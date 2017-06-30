@@ -15,11 +15,6 @@ body
 	min-width: 300px;
 }
 
-#myForm
-{
-	
-}
-
 .floatLeft
 {
 	float: left;
@@ -78,13 +73,16 @@ select
 	padding-left: 0px;
 	text-align: center;
 	font-size: 35px;
-	padding-top: 179px;
+	padding-top: 149px;
 }
 
 input[type=text]
 {
 	background: #dedede;
-	
+	font-family: 'Amatic SC', cursive;
+	font-weight: 700;
+	font-size: 25px;
+	letter-spacing: 2px;
 	width: 100%;
 	box-sizing: border-box;
 	height: 40px;
@@ -100,19 +98,19 @@ input[type="checkbox"]
 {
 	width: 22px;
 	height: 22px;
-	
 }
 
 .alignLeft
 {
 	text-align: left;
 }
+
 button
 {
 	width: 50%;	
 	height: 50px;
 	float: left;	
-	font-family: 'Amatic SC', cursive;
+	font-family: 'Amatic SC';
 	font-size: 30px;
 	font-weight: 400;
 	color: #FFF;
@@ -126,14 +124,17 @@ button
 	width: 100%;
 	border-top: 2px dashed #999;
 }
+
 .noBorder
 {
 	border-top: 0px;
 }
+
 h1
 {
 	padding-left: 5px;
 	font-family: 'Amatic SC', cursive;
+	font-weight: 700;
 	padding-top: 10px;
 	margin-top: 0px;
 	padding-bottom: 10px;
