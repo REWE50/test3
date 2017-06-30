@@ -87,7 +87,7 @@ myApp.controller("myToDoListController", function($scope)
 			// outputs a message if the user clears all their tasks
 			if($scope.todoList.length <1)
 			{
-				$scope.statusMsg = "Huzzah! You have done all your tasks!";
+				$scope.statusMsg = "Huzzah! You have accomplished all your tasks!";
 				$scope.getStatusMsg();
 			}
 		}
