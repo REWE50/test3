@@ -3,12 +3,15 @@
 
 	<head>
 		<meta charset="utf-8">
+		
 		<title>My To-Do List</title>
-		<!--<link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">-->
-		<!--<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">-->
-		<link rel="stylesheet" href="css/myCSS.css">
+
 		<link rel="stylesheet" href="fonts/fonts.css">
 		<link rel="stylesheet" href="icons/icons.css">
+		<link rel="stylesheet" href="css/myCSS.css">
+		
+				<script src="js/angular.js"></script>
+		<script src="js/myJS.js"></script>
 
 		<!--
 			Ray Egan
@@ -27,9 +30,8 @@
 			</div>
 
 			<ul>
-				
 				<li data-ng-repeat="currentTask in todoList" class="done-{{currentTask.done}}">#{{$index+1}}<input type="checkbox" data-ng-model="currentTask.done" id="checkBox" />&nbsp;<span id="taskName">{{currentTask.task}}</span> {{currentTask.description}}</li>
-				<li data-ng-view="getStatusMsg" id="statusMsg">{{getStatusMsg()}}</li>
+				<li data-ng-view="getStatusMsg()" id="statusMsg">{{getStatusMsg()}}</li>
 			</ul>
 
 			<div id="form">	
@@ -47,9 +49,9 @@
 			</div>
 
 		</div>
+		
 
-		<script type="text/javascript" src="js/angular.js"></script>
-		<script type="text/javascript" src="js/myJS.js"></script>	
+		<script src="phonegap.js"></script>
 	</body>
 
 </html>
