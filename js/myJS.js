@@ -16,10 +16,11 @@ myApp.controller("myToDoListController", function($scope)
 	};	
 	
 	// outputs an initial message that the user has no tasks
-	$scope.statusMsg = "Welcome! Please add your 1st task";
+	var statusMsg = "Welcome! Please add your 1st task";
+	
 	$scope.getStatusMsg = function()
 	{
-		return $scope.statusMsg;
+		return statusMsg;
 	}
 	
 	// pushes the task name and description as entered by the user to the todoList array, and adds a default 'done' property set to false
@@ -54,8 +55,8 @@ myApp.controller("myToDoListController", function($scope)
 				$scope.newTask.task = "";
 				$scope.newTask.description = "";
 				
-				// clears the huzsah message off the screen to show the tasks
-				$scope.statusMsg="";
+				// clears the status message off the screen to show the tasks
+				statusMsg="";
 				$scope.getStatusMsg();
 			}
 		}
@@ -74,24 +75,34 @@ myApp.controller("myToDoListController", function($scope)
 	{
 		for(var i = 0; i < $scope.todoList.length; i++) 
 		{
-			//console.log(i)
 			if($scope.todoList[i].done)  
 			{
-				//console.log(i)
 				$scope.todoList.splice(i, 1);
 				i--;
-				//console.log(i)
 			}
-			//console.log(i)
 			
 			// outputs a message if the user clears all their tasks
 			if($scope.todoList.length <1)
 			{
-				$scope.statusMsg = "Huzzah! You have completed all your tasks!";
+				
+				// creates a random number between 1 & 3 and outputs an associated message
+				var checkNum = Math.floor((Math.random()*3)+1);
+				
+				if(checkNum == 1)
+				{
+					statusMsg = "Huzzah! You have completed all your tasks!";
+				}
+				else if(checkNum == 2)
+				{
+					statusMsg = "Yippie! All your tasks have been cleared!";
+				}
+				else
+				{
+					statusMsg = "Awesome! No more tasks here!";
+				}
+					
 				$scope.getStatusMsg();
 			}
-		}
-		
-		
+		}	
 	};		
 });	
