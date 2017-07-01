@@ -54,6 +54,12 @@ body
     line-height: 30px;
     border-radius: 3px;
     display:inline-block;
+	font-size: 30px;
+}
+
+#taskDescription
+{
+	font-size: 26px;
 }
 
 .noGutters
