@@ -19,7 +19,7 @@
 	<content src="index.html"></content>
 	
 	<!-- build for android only -->
-	<platform name="android">
+	<platform name="android"></platform>
 		
 	<preference name="phonegap-version" 				value="cli-6.4.0" />
 	<preference name="permissions"             	    	value="none"/>
