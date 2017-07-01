@@ -46,6 +46,10 @@ body
 	margin-right: auto;
 }
 
+#taskDescription
+{
+	padding-left: 5px;
+}
 .highlight-true
 {
 	background: #a23232;
