@@ -33,7 +33,7 @@
 			<ul>
 				<!-- we use data-ng-repeat to populate our ul with as many list items as there are tasks in our todoList in our controller -->
 				<!-- using a number of different directives to return bound data from our controller -->
-				<li data-ng-repeat="currentTask in todoList" class="done-{{currentTask.done}}">#{{$index+1}}<input type="checkbox" data-ng-model="currentTask.done" id="checkBox" />&nbsp;<span id="taskName">{{currentTask.task}}</span> {{currentTask.description}}</li>
+				<li data-ng-repeat="currentTask in todoList" class="done-{{currentTask.done}}">#{{$index+1}}<input type="checkbox" data-ng-model="currentTask.done" id="checkBox" />&nbsp;<span id="taskName">{{currentTask.task}}</span><span id="taskDescription"> {{currentTask.description}}</span></li>
 				<li data-ng-view="getStatusMsg()" id="statusMsg">{{getStatusMsg()}}</li>
 			</ul>
 
