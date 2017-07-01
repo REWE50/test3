@@ -89,22 +89,9 @@ input[type=text]
 	padding-left: 5px;
 }
 
-::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-    color:    #9a9a9a;
-}
-:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-   color:    #9a9a9a;
-   opacity:  1;
-}
-::-moz-placeholder { /* Mozilla Firefox 19+ */
-   color:    #9a9a9a;
-   opacity:  1;
-}
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
-   color:    #9a9a9a;
-}
-::-ms-input-placeholder { /* Microsoft Edge */
-   color:    #9a9a9a;
+input::-webkit-input-placeholder 
+{ 
+    color: #9a9a9a;
 }
 
 input[type=radio]
@@ -112,10 +99,15 @@ input[type=radio]
 	width: 30%;
 }
 
-input[type="checkbox"]
+input[type=checkbox]
 {
 	width: 22px;
 	height: 22px;
+}
+
+.checkBox
+{
+	
 }
 
 .alignLeft
