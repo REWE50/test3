@@ -18,12 +18,15 @@
 
 	<content src="index.html"></content>
 	
-	<preference name="phonegap-version" 			value="cli-6.4.0" />
-    <preference name="permissions"             	    value="none"/>
-    <preference name="Orientation"              	value="Portrait" />       
-    <preference name="target-device"             	value="universal" />     
-    <preference name="android-installLocation"   	value="auto" />    
-	<preference name="SplashScreen" 				value="splash" />
+	<!-- build for android only -->
+	<platform name="android">
+		<preference name="phonegap-version" 			value="cli-6.4.0" />
+		<preference name="permissions"             	    value="none"/>
+		<preference name="Orientation"              	value="Portrait" />       
+		<preference name="target-device"             	value="universal" />     
+		<preference name="android-installLocation"   	value="auto" />    
+		<preference name="SplashScreen" 				value="splash" />
+    </platform>
  
     <!-- core plugins -->
 	<plugin name="cordova-plugin-inappbrowser" spec="1.7.1" />
@@ -48,12 +51,6 @@
 	<gap:splash src="res/screen/android/screen-xxhdpi-portrait.png"     gap:platform="android" gap:qualifier="port-xxhdpi" />
 	<gap:splash src="res/screen/android/screen-xxxhdpi-portrait.png"    gap:platform="android" gap:qualifier="port-xxxhdpi" />
     
-    <!-- build for android only -->
-	<platform name="android">
-		<preference name="Orientation"              	value="Portrait" />
-
-    </platform>
-	
 	<gap:config-file platform="android" parent="/manifest" >
 		<application>
 			<activity android:screenOrientation="portrait" android:configChanges="orientation"/>
