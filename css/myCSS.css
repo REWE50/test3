@@ -46,20 +46,24 @@ body
 	margin-right: auto;
 }
 
-#taskName
+.highlight-true
+{
+	background: #a23232;
+    padding: 0px 10px 0px 8px;
+    margin: -3px -5px;
+	line-height: 29px;
+    border-radius: 3px;
+    display:inline-block;
+}
+
+.highlight-false
 {
 	background: rgba(255, 230, 0, 0.5);
     padding: 0px 10px 0px 8px;
     margin: -3px -5px;
-    line-height: 30px;
+	line-height: 30px;
     border-radius: 3px;
     display:inline-block;
-	/*font-size: 30px;*/
-}
-
-#taskDescription
-{
-	font-size: 26px;
 }
 
 .noGutters
