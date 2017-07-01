@@ -19,21 +19,21 @@
 	<content src="index.html"></content>
 	
 	<!-- build for android only -->
-	<platform name="android"></platform>
-		
-	<preference name="phonegap-version" 				value="cli-6.4.0" />
-	<preference name="permissions"             	    	value="none"/>
-	<preference name="orientation"              		value="portrait" />       
-	<preference name="target-device"             		value="universal" />     
-	<preference name="android-installLocation"   		value="auto" />    
-	<preference name="splashscreen" 					value="splash" />
+	<platform name="android">
+		<preference name="phonegap-version" 				value="cli-6.4.0" />
+		<preference name="permissions"             	    	value="none"/>
+		<preference name="orientation"              		value="portrait" />       
+		<preference name="target-device"             		value="universal" />     
+		<preference name="android-installLocation"   		value="auto" />    
+		<preference name="splashscreen" 					value="splash" />
 
-	<!-- core plugins -->
-	<plugin name="cordova-plugin-inappbrowser" 			spec="1.7.1" />
-	<plugin name="cordova-plugin-splashscreen" />
-	<plugin name="orientationLock" 						spec="https://github.com/cogitor/PhoneGap-OrientationLock.git" />
-
-	<!-- customised icons -->
+		<!-- core plugins -->
+		<plugin name="cordova-plugin-inappbrowser" 			spec="1.7.1" />
+		<plugin name="cordova-plugin-splashscreen" />
+		<plugin name="orientationLock" 						spec="https://github.com/cogitor/PhoneGap-OrientationLock.git" />
+	</platform>
+	
+	<!-- default & customised icons -->
 	<!-- http://docs.phonegap.com/phonegap-build/configuring/icons-and-splash/ -->
 	<icon src="icon.png" />
 	<icon src="res/icon/android/ldpi.png" 				platform="android" 	  qualifier="ldpi" />
@@ -43,7 +43,7 @@
 	<icon src="res/icon/android/xxhdpi.png"  			platform="android"    qualifier="xxhdpi" />
 	<icon src="res/icon/android/xxxhdpi.png"  			platform="android"    qualifier="xxxhdpi" />
 	
-    <!-- customised splash screens -->
+    <!-- default & customised splash screens -->
 	<!-- http://docs.phonegap.com/phonegap-build/configuring/icons-and-splash/ -->
 	<splash src="splash.png" />
 	<gap:splash src="res/screen/android/ldpi.png"       platform="android" 	qualifier="port-ldpi" />
